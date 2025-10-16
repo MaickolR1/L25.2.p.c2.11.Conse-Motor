@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos para la venta</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h2>CONSECIONARIO</h2>
+    <section id="vehículoForm" hidden>
+        <h3 style="width: 250px;">Vehiculo <span id="vehículoForm_lblTipo"></span></h3>
+        <label>placa:
+            <input type="text" id="vehículoForm_inPlaca"></input>
+        </label>
+        <label>Color:
+            <input type="text" id="vehículoForm_inColor"></input>
+        </label>
+        <label>PrecioBase:
+            <input type="number" id="vehículoForm_inPrecioBase"></input>
+        </label>
+        <label hidden id="vehículoForm_divInPlaca">Placa:
+            <input type="text" id="vehículoForm_inPlaca"></input>
+        </label>
+        <label hidden id="vehículoForm_divInColor">Color:
+            <input type="text" id="vehículoForm_inColor"></input>
+        </label>
+        <label hidden id="vehículoForm_divInModelo">Modelo:
+            <input type="text" id="vehículoForm_inModelo"></input>
+        </label>
+        <div>
+            <button id="vehículoForm_btAceptarMoto" hidden>Aceptar</button>
+            <button id="vehículoForm_btAceptarAuto" hidden>Aceptar</button>
+            <button id="vehículoForm_btCancelar">Cancelar</button>
+        </div>
+    </section>
+    <section id="mainForm">
+        <h3>Vehiculos procesadas</h3>
+        <table>
+            <thead>
+                <th>Placa</th>
+                <th>Color</th>
+                <th>PrecioBase</th>
+                <th>Modelo</th>
+                <th>Precio</th>
+                <th>PrecioFinal</th>
+                <th>Comisión</th>
+            </thead>
+            <tbody id="mainForm_dataVehiculos"></tbody>
+        </table>
+        <div class="divBotones">
+            <button id="mainForm_btAgregarMoto">+Vehículo moto</button>
+            <button id="mainForm_btAgregarAuto">+Vehículo auto</button>
+        </div>
+        <h3>Info de la venta</h3>
+        <div class="divSalida">
+            <label>Monto total de la venta: $
+                <span id="mainForm_lblMontoTotalVenta"></span>
+            </label>
+            <label>Comision de vendedores:
+                <span id="mainForm_lblComisionVendedores"></span>
+            </label>
+            <label>Porcentaja que representa las comisiones: %
+                <span id="mainForm_lblPorcentajaComisiones"></span>
+            </label>
+        </div>
+    </section>
+    <script type="module">
+        import Cl_index from "./dist/Cl_index.js";
+        new Cl_index()
+    </script>
+</body>
+
+</html>
