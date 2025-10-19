@@ -33,7 +33,7 @@ export default class Cl_vVehiculo extends Cl_vGeneral {
   }: {
     ver?: boolean;
     nombreTipo?: string;
-  }): void {
+  } = { ver: true, nombreTipo: "" }): void {
     super.show({ ver });
     this.lblTipo.innerHTML = nombreTipo;
     this.inPlaca.value = "";

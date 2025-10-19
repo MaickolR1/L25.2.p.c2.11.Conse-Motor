@@ -22,7 +22,7 @@ export default class Cl_vVehiculo extends Cl_vGeneral {
     get color() {
         return this.inColor.value;
     }
-    show({ ver = true, nombreTipo = "", }) {
+    show({ ver = true, nombreTipo = "", } = { ver: true, nombreTipo: "" }) {
         super.show({ ver });
         this.lblTipo.innerHTML = nombreTipo;
         this.inPlaca.value = "";
