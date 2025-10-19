@@ -82,7 +82,7 @@ export default class Cl_vConsecionario extends Cl_vGeneral {
       <td class="colNumber">${dataVehiculo.modelo ? dataVehiculo.modelo : "--"}</td>
       <td class="colCurrency">${`Bs.${montoTotal.toFixed(2)}`}</td>
       <td class="colNumber">${comisionVendedor.toString()}</td>
-      <td class="colCurrency">${`Bs.${porcentajeComision.toFixed(2)}`}</td>
+      
     `;
     this.lblMontoTotal.innerHTML = montoTotal.toFixed(2);
     this.lblComisionVendedor.innerHTML = comisionVendedor.toString();
