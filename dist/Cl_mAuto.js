@@ -1,4 +1,4 @@
-import Cl_mVehiculo from "./Cl_mVehiculo";
+import Cl_mVehiculo from "./Cl_mVehiculo.js";
 export default class Cl_mAuto extends Cl_mVehiculo {
     constructor({ placa, color, precioBase }) {
         super({ placa, color });
