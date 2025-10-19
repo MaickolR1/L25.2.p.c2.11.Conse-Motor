@@ -6,8 +6,8 @@ export default class Cl_vVehiculo extends Cl_vGeneral {
   private lblTipo: HTMLElement;
   private btCancelar: HTMLButtonElement;
 
-  constructor() {
-    super({ formName: "vehichuloForm" });
+  constructor({formName}: {formName: string}) {
+    super({ formName });
     this.lblTipo = this.crearHTMLElement({ elementName: "lblTipo" });
     this.inPlaca = this.crearHTMLInputElement({ elementName: "inPlaca" });
     this.inColor = this.crearHTMLInputElement({

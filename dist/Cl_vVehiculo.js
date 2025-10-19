@@ -1,7 +1,7 @@
 import Cl_vGeneral from "./Cl_vGeneral.js";
 export default class Cl_vVehiculo extends Cl_vGeneral {
-    constructor() {
-        super({ formName: "vehichuloForm" });
+    constructor({ formName }) {
+        super({ formName });
         this.lblTipo = this.crearHTMLElement({ elementName: "lblTipo" });
         this.inPlaca = this.crearHTMLInputElement({ elementName: "inPlaca" });
         this.inColor = this.crearHTMLInputElement({
