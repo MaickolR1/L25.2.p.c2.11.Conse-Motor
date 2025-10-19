@@ -12,29 +12,38 @@
     <h2>CONCESIONARIO</h2>
 
     <section id="vehiculoForm" hidden> 
-        <h3 style="width: 250px;">Datos del <span id="vehiculoForm_lblTipo">Vehículo</span></h3>
-        
+    <h3 style="width: 250px;">Datos del <span id="vehiculoForm_lblTipo">Vehículo</span></h3>
+    
+    <div id="vehiculoForm_divInPlaca"> 
         <label>Placa:
             <input type="text" id="vehiculoForm_inPlaca"></input> 
         </label>
+    </div>
+    
+    <div id="vehiculoForm_divInColor">
         <label>Color:
             <input type="text" id="vehiculoForm_inColor"></input>
         </label>
-        
-        <label hidden id="vehiculoForm_divInPrecioBase">Precio Base:
+    </div>
+    
+    <div id="vehiculoForm_divInPrecioBase" hidden> 
+        <label>Precio Base:
             <input type="number" id="vehiculoForm_inPrecioBase"></input>
         </label>
-        
-        <label hidden id="vehiculoForm_divInModelo">Modelo (P/T/D):
+    </div>
+    
+    <div id="vehiculoForm_divInModelo" hidden>
+        <label>Modelo (P/T/D):
             <input type="text" id="vehiculoForm_inModelo"></input>
         </label>
-        
-        <div>
-            <button id="vehiculoForm_btAceptarAuto" hidden>Aceptar Auto</button>
-            <button id="vehiculoForm_btAceptarMoto" hidden>Aceptar Moto</button>
-            <button id="vehiculoForm_btCancelar">Cancelar</button>
-        </div>
-    </section>
+    </div>
+    
+    <div>
+        <button id="vehiculoForm_btAceptarAuto" hidden>Aceptar Auto</button>
+        <button id="vehiculoForm_btAceptarMoto" hidden>Aceptar Moto</button>
+        <button id="vehiculoForm_btCancelar">Cancelar</button>
+    </div>
+</section>
 
     <section id="mainForm">
         <h3>Vehículos procesados y Reporte de Ventas</h3>
