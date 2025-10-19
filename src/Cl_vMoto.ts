@@ -14,7 +14,7 @@ export default class Cl_vMoto extends Cl_vVehiculo {
   private inModeloMoto: HTMLInputElement;
   private btAceptarMoto: HTMLElement;
   constructor() {
-    super({ formName: "vehiculoForm" });
+    super({ formName: "mainForm" });
     this.divInPlacaMoto = this.crearHTMLElement({ elementName: "divInPlaca" });
     this.inPlacaMoto = this.crearHTMLInputElement({ elementName: "inPlaca" });
     this.divInColorMoto = this.crearHTMLElement({ elementName: "divInColor" });

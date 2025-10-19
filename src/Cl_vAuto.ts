@@ -14,7 +14,7 @@ export default class Cl_vAuto extends Cl_vVehiculo {
   private inPrecioBase: HTMLInputElement;
   private btAceptar: HTMLElement;
   constructor() {
-    super({ formName: "vehiculoForm" });
+    super({ formName: "mainForm" });
     this.divInPlaca = this.crearHTMLElement({ elementName: "divInPlaca" });
     this.inPlacaInput = this.crearHTMLInputElement({ elementName: "inPlaca" });
     this.divInColorDiv = this.crearHTMLElement({ elementName: "divInColor" });
