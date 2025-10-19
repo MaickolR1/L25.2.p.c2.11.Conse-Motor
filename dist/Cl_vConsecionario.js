@@ -4,7 +4,7 @@ import Cl_vGeneral from "./Cl_vGeneral.js";
 // Define una interfaz para el controlador
 export default class Cl_vConsecionario extends Cl_vGeneral {
     constructor() {
-        super({ elementName: "mainForm" });
+        super({ formName: "vehiculoForm" });
         this._vMoto = new Cl_vMoto();
         this._vAuto = new Cl_vAuto();
         this.dataVehiculos = this.crearHTMLElement({ elementName: "dataVehiculos" });
