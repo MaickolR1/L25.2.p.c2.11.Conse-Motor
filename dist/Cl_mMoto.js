@@ -33,16 +33,16 @@ export default class Cl_mMoto extends Cl_mVehiculo {
         let recargoColor = 0;
         // Calcula el recargo por color
         if (this.color.toLowerCase() === "rojo") {
-            recargoColor = precioBase * 0.15;
+            recargoColor = this.modeloPrecio() * 0.15;
         }
         else {
-            recargoColor = precioBase * 0.1;
+            recargoColor = this.modeloPrecio() * 0.1;
         }
         return precioBase + recargoColor;
     }
     comision() {
         // Asumiendo una comisión del 15% para Motos (lógica de negocio)
-        return this.precioFinal() * 0.15;
+        return this.precioFinal() * 0.5;
     }
     toJSON() {
         return Object.assign(Object.assign({}, super.toJSON()), { modelo: this.modelo, modeloPrecio: this.modeloPrecio(), precioFinal: this.precioFinal(), comision: this.comision() // Para verificación

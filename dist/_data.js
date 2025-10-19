@@ -1,9 +1,9 @@
 let vehiculoMoto, vehiculoAuto;
 vehiculoAuto = [
-    { placa: "22", color: "Rojo", precioBase: 1000.00 },
-    { placa: "11", color: "Blanco", precioBase: 500.00 },
-    { placa: "55", color: "Rojo", precioBase: 2000.00 },
-    { placa: "88", color: "Azul", precioBase: 3000.00 },
+    { placa: "22", color: "Rojo", precioBase: 1.000 },
+    { placa: "11", color: "Blanco", precioBase: 500 },
+    { placa: "55", color: "Rojo", precioBase: 2.000 },
+    { placa: "88", color: "Azul", precioBase: 3.000 },
 ];
 vehiculoMoto = [
     { placa: "44", color: "Rojo", modelo: "T" },

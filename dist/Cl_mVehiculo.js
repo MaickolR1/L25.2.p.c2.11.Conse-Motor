@@ -17,13 +17,11 @@ export default class Cl_mVehiculo {
     get Color() {
         return this.color;
     }
-    preciofinal() {
-        switch (this.color.toLowerCase()) {
-            case "rojo":
-                return 0.15;
-            default:
-                return 0;
-        }
+    precioFinal() {
+        return 0;
+    }
+    tipoVehiculo() {
+        return "";
     }
     comision() {
         return 0;
