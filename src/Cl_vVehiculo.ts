@@ -3,7 +3,7 @@ import Cl_vGeneral from "./Cl_vGeneral.js";
 export default class Cl_vVehiculo extends Cl_vGeneral {
   private inPlaca: HTMLInputElement;
   private inColor: HTMLInputElement;
-  private lblTipo: HTMLElement;
+  public lblTipo: HTMLElement;
   private btCancelar: HTMLButtonElement;
 
   constructor({formName}: {formName: string}) {
