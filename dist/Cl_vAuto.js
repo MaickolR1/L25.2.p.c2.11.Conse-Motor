@@ -9,7 +9,7 @@ export default class Cl_vAuto extends Cl_vVehiculo {
         this.divInPrecioBase = this.crearHTMLElement({ elementName: "divInPrecioBase" });
         this.inPrecioBase = this.crearHTMLInputElement({ elementName: "inPrecioBase" });
         this.btAceptar = this.crearHTMLButtonElement({
-            elementName: "btAceptarVehiculo",
+            elementName: "btAceptarAuto",
             onclick: () => {
                 var _a;
                 return (_a = this.controlador) === null || _a === void 0 ? void 0 : _a.procesarVehiculoAuto({
