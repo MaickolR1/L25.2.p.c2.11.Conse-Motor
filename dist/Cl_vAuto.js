@@ -1,5 +1,5 @@
-import Cl_vPoliza from "./Cl_vVehiculo.js";
-export default class Cl_vAuto extends Cl_vPoliza {
+import Cl_vVehiculo from "./Cl_vVehiculo.js";
+export default class Cl_vAuto extends Cl_vVehiculo {
     constructor() {
         super();
         this.divInPlaca = this.crearHTMLElement({ elementName: "divInPlaca" });

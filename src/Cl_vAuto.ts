@@ -1,11 +1,11 @@
-import Cl_vPoliza from "./Cl_vVehiculo.js";
+import Cl_vVehiculo from "./Cl_vVehiculo.js";
 interface iAuto {
   placa: string;
   color: string;
   precioBase: number;
 }
 
-export default class Cl_vAuto extends Cl_vPoliza {
+export default class Cl_vAuto extends Cl_vVehiculo {
   private divInPlaca: HTMLElement;
   private inPlacaInput: HTMLInputElement;
   private divInColorDiv: HTMLElement;
