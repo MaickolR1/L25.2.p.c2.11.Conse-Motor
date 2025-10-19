@@ -1,19 +1,19 @@
 export default class Cl_vGeneral {
-    constructor({ formName }) {
-        this._formName = "";
+    constructor({ elementName }) {
+        this._elementName = "";
         this._vista = null;
         this._controlador = null;
-        this.formName = formName;
+        this.elementName = elementName;
         this.vista = this.crearHTMLElement({
-            elementName: this.formName,
+            elementName: this.elementName,
             isForm: true,
         });
     }
-    set formName(formName) {
-        this._formName = formName;
+    set elementName(elementName) {
+        this._elementName = elementName;
     }
-    get formName() {
-        return this._formName;
+    get elementName() {
+        return this._elementName;
     }
     set vista(vista) {
         this._vista = vista;
@@ -30,7 +30,7 @@ export default class Cl_vGeneral {
     crearHTMLElement({ elementName, isForm = false, }) {
         let domElementName = isForm
             ? elementName
-            : `${this.formName}_${elementName}`;
+            : `${this.elementName}_${elementName}`;
         let domElement = document.getElementById(domElementName);
         if (!domElement) {
             let msg = `Elemento ${domElementName} no encontrado`;
@@ -40,7 +40,7 @@ export default class Cl_vGeneral {
         return domElement;
     }
     crearHTMLInputElement({ elementName, }) {
-        let domElementName = `${this.formName}_${elementName}`;
+        let domElementName = `${this.elementName}_${elementName}`;
         let domElement = document.getElementById(domElementName);
         if (!domElement) {
             let msg = `Elemento ${domElementName} no encontrado`;
@@ -50,7 +50,7 @@ export default class Cl_vGeneral {
         return domElement;
     }
     crearHTMLButtonElement({ elementName, onclick, }) {
-        let domElementName = `${this.formName}_${elementName}`;
+        let domElementName = `${this.elementName}_${elementName}`;
         let domElement = document.getElementById(domElementName);
         if (!domElement) {
             let msg = `Elemento ${domElementName} no encontrado`;
