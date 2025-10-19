@@ -21,7 +21,7 @@ export default class Cl_vConsecionario extends Cl_vGeneral {
   private btAgregarAuto: HTMLElement;
 
   constructor() {
-    super({ formName: "mainForm" });
+    super({ formName: "vehiculoForm" });
     this._vMoto = new Cl_vMoto();
     this._vAuto = new Cl_vAuto();
     this.dataVehiculos = this.crearHTMLElement({ elementName: "dataVehiculos" });

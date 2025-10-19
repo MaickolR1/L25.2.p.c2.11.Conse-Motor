@@ -1,7 +1,7 @@
 import Cl_vVehiculo from "./Cl_vVehiculo.js";
 export default class Cl_vMoto extends Cl_vVehiculo {
     constructor() {
-        super({ formName: "mainForm" });
+        super({ formName: "vehiculoForm" });
         this.divInPlacaMoto = this.crearHTMLElement({ elementName: "divInPlaca" });
         this.inPlacaMoto = this.crearHTMLInputElement({ elementName: "inPlaca" });
         this.divInColorMoto = this.crearHTMLElement({ elementName: "divInColor" });
