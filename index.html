@@ -10,24 +10,31 @@
 
 <body>
     <h2>CONSECIONARIO</h2>
-    <section id="vehiculoForm" hidden>
-        <h3 style="width: 250px;">Vehiculo <span id="vehiculoForm_lblTipo"></span></h3>
+    <section id="mainForm" hidden>
+        <h3 style="width: 250px;">Vehiculo Auto <span id="mainForm_lblTipo"></span></h3>
         <label>Placa:
-            <input type="text" id="vehiculoForm_inPlaca"></input>
+            <input type="text" id="mainForm_inPlaca"></input>
         </label>
         <label>Color:
-            <input type="text" id="vehiculoForm_inColor"></input>
+            <input type="text" id="mainForm_inColor"></input>
         </label>
-        <label hidden id="vehiculoForm_divInModelo">Modelo:
-            <input type="text" id="vehiculoForm_inModelo"></input>
+        <h3 style="width: 250px;">Vehiculo Moto <span id="mainForm_lblTipo"></span></h3>
+        <label>Placa:
+            <input type="text" id="mainForm_inPlaca"></input>
         </label>
-        <label hidden id="vehiculoForm_divInPrecioBase">Precio Base:
-            <input type="number" id="vehiculoForm_inPrecioBase"></input>
+        <label>Color:
+            <input type="text" id="mainForm_inColor"></input>
+        </label>
+        <label hidden id="mainForm_divInModelo">Modelo:
+            <input type="text" id="mainForm_inModelo"></input>
+        </label>
+        <label hidden id="mainForm_divInPrecioBase">Precio Base:
+            <input type="number" id="mainForm_inPrecioBase"></input>
         </label>
         <div>
-            <button id="vehiculoForm_btAceptarMoto" hidden>Aceptar</button>
-            <button id="vehiculoForm_btAceptarAuto" hidden>Aceptar</button>
-            <button id="vehiculoForm_btCancelar">Cancelar</button>
+            <button id="mainForm_btAceptarMoto" hidden>Aceptar</button>
+            <button id="mainForm_btAceptarAuto" hidden>Aceptar</button>
+            <button id="mainForm_btCancelar">Cancelar</button>
         </div>
     </section>
     <section id="mainForm">
