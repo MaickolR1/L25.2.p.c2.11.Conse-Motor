@@ -1,7 +1,7 @@
 import Cl_mVehiculo from "./Cl_mVehiculo.js";
 
 export default class Cl_mMoto extends Cl_mVehiculo {
-    public _modelo: string = "";
+    public modelo: string = "";
 
     constructor({
         placa,
@@ -13,22 +13,22 @@ export default class Cl_mMoto extends Cl_mVehiculo {
         modelo: string;
     }) {
         super({ placa, color });
-        this._modelo = modelo;
+        this.modelo = modelo;
     }
 
     set Modelo(modelo: string) {
-        this._modelo = modelo;
+        this.modelo = modelo;
     }
 
     get Modelo(): string {
-        return this._modelo;
+        return this.modelo;
     }
     modeloPrecio(): number {
         let precio: number = 0;
-        if (this._modelo === "P") {
+        if (this.modelo === "P") {
             return 400;
         } else {
-            if (this._modelo === "T") {
+            if (this.modelo === "T") {
                 return 500;
             } else {
                 return 600;
@@ -39,7 +39,7 @@ export default class Cl_mMoto extends Cl_mVehiculo {
      toJSON() {
         return {
             ...super.toJSON(),
-            modelo: this._modelo,
+            modelo: this.modelo,
             modeloPrecio: this.modeloPrecio()
         };
 

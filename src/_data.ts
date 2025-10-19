@@ -1,14 +1,14 @@
-interface iMoto {
+interface mMoto {
   placa: string;
   color: string;
   modelo: string;
 }
-interface iAuto {
+interface mAuto {
   placa: string;
   color: string;
   precioBase: number;
 }
-let vehiculoMoto: iMoto[], vehiculoAuto: iAuto[];
+let vehiculoMoto: mMoto[], vehiculoAuto: mAuto[];
 vehiculoMoto = [
   { placa: "44", color: "Rojo", modelo: "T" },
   { placa: "33", color: "Blanco", modelo: "P" },

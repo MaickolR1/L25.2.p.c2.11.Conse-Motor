@@ -1,29 +1,31 @@
-{
-    "cSpell.words": [
-        "Aceptar",
-        "anio",
-        "Asegurar",
-        "azual",
-        "azul",
-        "blanco",
-        "comision",
-        "Comisión",
-        "comisiones",
-        "CONSECIONARIO",
-        "defensa",
-        "edad",
-        "lblcomision",
-        "Moto",
-        "Póliza",
-        "polizas",
-        "Pólizas",
-        "Porcentaja",
-        "procesadas",
-        "representa",
-        "rojo",
-        "vehichulo",
-        "Vendedor",
-        "vendedores",
-        "venta"
-    ]
-}
+export default {
+    "cSpell": {
+        "words": [
+            "Aceptar",
+            "anio",
+            "Asegurar",
+            "azual",
+            "azul",
+            "blanco",
+            "comision",
+            "Comisión",
+            "comisiones",
+            "CONSECIONARIO",
+            "defensa",
+            "edad",
+            "lblcomision",
+            "Moto",
+            "Póliza",
+            "polizas",
+            "Pólizas",
+            "Porcentaja",
+            "procesadas",
+            "representa",
+            "rojo",
+            "vehichulo",
+            "Vendedor",
+            "vendedores",
+            "venta"
+        ]
+    }
+};

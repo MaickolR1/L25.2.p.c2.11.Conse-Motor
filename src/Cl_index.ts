@@ -14,7 +14,21 @@ export default class Cl_index {
     this.iniciarData();
   }
   iniciarData() {
-    this.controlador.procesarVehiculoMoto(vehiculoMoto[0]);
-    this.controlador.procesarVehiculoAuto(vehiculoAuto[0]);
+    this.controlador.procesarVehiculoMoto(new Cl_mMoto(vehiculoMoto[0]));
+    this.controlador.procesarVehiculoMoto(new Cl_mMoto(vehiculoMoto[1]));
+    this.controlador.procesarVehiculoMoto(new Cl_mMoto(vehiculoMoto[2]));
+    this.controlador.procesarVehiculoMoto(new Cl_mMoto(vehiculoMoto[3]));
+    this.controlador.procesarVehiculoAuto(
+      new Cl_mAuto(vehiculoAuto[0])
+    );
+    this.controlador.procesarVehiculoAuto(
+      new Cl_mAuto(vehiculoAuto[1])
+    );
+    this.controlador.procesarVehiculoAuto(
+      new Cl_mAuto(vehiculoAuto[2])
+    );
+    this.controlador.procesarVehiculoAuto(
+      new Cl_mAuto(vehiculoAuto[3])
+    );
   }
 }
