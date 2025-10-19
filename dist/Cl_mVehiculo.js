@@ -1,25 +1,25 @@
 export default class Cl_mVehiculo {
     constructor({ placa, color }) {
-        this._placa = "";
-        this._color = "";
-        this._placa = placa;
-        this._color = color;
+        this.placa = "";
+        this.color = "";
+        this.placa = placa;
+        this.color = color;
     }
     set Placa(placa) {
-        this._placa = placa;
+        this.placa = placa;
     }
     get Placa() {
-        return this._placa;
+        return this.placa;
     }
     set Color(color) {
-        this._color = color;
+        this.color = color;
     }
     get Color() {
-        return this._color;
+        return this.color;
     }
     precioFinal() {
         let precio = 0;
-        if (this._color === "rojo") {
+        if (this.color === "rojo") {
             return +precio * 0.15;
         }
         else {
@@ -49,8 +49,8 @@ export default class Cl_mVehiculo {
     }
     toJSON() {
         return {
-            placa: this._placa,
-            color: this._color,
+            placa: this.placa,
+            color: this.color,
             precioFinal: this.precioFinal(),
             comision: this.comision()
         };
