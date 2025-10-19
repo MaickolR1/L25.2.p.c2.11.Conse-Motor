@@ -10,10 +10,10 @@ interface mAuto {
 }
 let vehiculoMoto: mMoto[], vehiculoAuto: mAuto[];
 vehiculoAuto = [
-  { placa: "22", color: "Rojo", precioBase: 1.000 },
+  { placa: "22", color: "Rojo", precioBase: 1000 },
   { placa: "11", color: "Blanco", precioBase: 500 },
-  { placa: "55", color: "Rojo", precioBase: 2.000 },
-  { placa: "88", color: "Azul", precioBase: 3.000 },
+  { placa: "55", color: "Rojo", precioBase: 2000 },
+  { placa: "88", color: "Azul", precioBase: 3000 },
 ];
 
 vehiculoMoto = [
