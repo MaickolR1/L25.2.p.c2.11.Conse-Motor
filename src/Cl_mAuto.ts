@@ -21,6 +21,23 @@ set PrecioBase(precioBase: number) {
 get PrecioBase(): number {
     return this.precioBase;
   }
+  tipoVehiculo(): string {
+    return "A"; // Devuelve 'A' (Auto) directamente.
+}
+precioFinal(): number {
+    let recargoColor: number = 0;
+    // Usar la propiedad precioBase del auto
+    if (this.color.toLowerCase() === "rojo") {
+        recargoColor = this.precioBase * 0.15; 
+    } else {
+        recargoColor = this.precioBase * 0.1; 
+    }
+    return this.precioBase + recargoColor;
+}
+comision(): number {
+    // Asumiendo una comisión del 7% para Autos (basado en el 0.7 original, que parecía un error de coma decimal)
+    return this.precioFinal() * 0.07; 
+}
   toJSON() {
     return {
       ...super.toJSON(),

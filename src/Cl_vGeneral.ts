@@ -1,21 +1,21 @@
 import Cl_controlador from "./Cl_controlador.js";
 
 export default class Cl_vGeneral {
-  private _formName: string = "";
+  private _elementName: string = "";
   private _vista: HTMLElement | null = null;
   private _controlador: Cl_controlador | null = null;
-  constructor({ formName }: { formName: string }) {
-    this.formName = formName;
+  constructor({ elementName }: { elementName: string }) {
+    this.elementName = elementName;
     this.vista = this.crearHTMLElement({
-      elementName: this.formName,
+      elementName: this.elementName,
       isForm: true,
     });
   }
-  set formName(formName: string) {
-    this._formName = formName;
+  set elementName(elementName: string) {
+    this._elementName = elementName;
   }
-  get formName(): string {
-    return this._formName;
+  get elementName(): string {
+    return this._elementName;
   }
   set vista(vista: HTMLElement) {
     this._vista = vista;
@@ -38,7 +38,7 @@ export default class Cl_vGeneral {
   }): HTMLElement {
     let domElementName = isForm
       ? elementName
-      : `${this.formName}_${elementName}`;
+      : `${this.elementName}_${elementName}`;
     let domElement = document.getElementById(domElementName) as HTMLElement;
     if (!domElement) {
       let msg = `Elemento ${domElementName} no encontrado`;
@@ -52,7 +52,7 @@ export default class Cl_vGeneral {
   }: {
     elementName: string;
   }): HTMLInputElement {
-    let domElementName = `${this.formName}_${elementName}`;
+    let domElementName = `${this.elementName}_${elementName}`;
     let domElement = document.getElementById(
       domElementName
     ) as HTMLInputElement;
@@ -70,7 +70,7 @@ export default class Cl_vGeneral {
     elementName: string;
     onclick?: () => void;
   }): HTMLButtonElement {
-    let domElementName = `${this.formName}_${elementName}`;
+    let domElementName = `${this.elementName}_${elementName}`;
     let domElement = document.getElementById(
       domElementName
     ) as HTMLButtonElement;

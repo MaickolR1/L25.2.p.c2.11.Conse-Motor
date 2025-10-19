@@ -35,13 +35,33 @@ export default class Cl_mMoto extends Cl_mVehiculo {
             }
         }
     }
+    tipoVehiculo(): string {
+    return "M"; // Devuelve 'M' (Moto) directamente.
+}
+precioFinal(): number {
+    let precioBase = this.modeloPrecio();
+    let recargoColor: number = 0;
     
-     toJSON() {
+    // Calcula el recargo por color
+    if (this.color.toLowerCase() === "rojo") {
+        recargoColor = precioBase * 0.15; 
+    } else {
+        recargoColor = precioBase * 0.1;  
+    }
+    return precioBase + recargoColor;
+}
+comision(): number {
+    // Asumiendo una comisión del 15% para Motos (lógica de negocio)
+    return this.precioFinal() * 0.15; 
+}
+    toJSON() {
         return {
             ...super.toJSON(),
             modelo: this.modelo,
-            modeloPrecio: this.modeloPrecio()
+            modeloPrecio: this.modeloPrecio(),
+            precioFinal: this.precioFinal(), // Para verificación
+            comision: this.comision()        // Para verificación
         };
-
     }
 }
+

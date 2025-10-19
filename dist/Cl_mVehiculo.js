@@ -18,41 +18,18 @@ export default class Cl_mVehiculo {
         return this.color;
     }
     precioFinal() {
-        let precio = 0;
-        if (this.color === "rojo") {
-            return +precio * 0.15;
-        }
-        else {
-            return +precio * 0.1;
-        }
+        return 0;
     }
     tipoVehiculo() {
-        if (this.tipoVehiculo() === "Auto") {
-            return "A";
-        }
-        else {
-            return "M";
-        }
+        return "";
     }
     comision() {
-        if (this.tipoVehiculo() === "A") {
-            return this.precioFinal() * 0.7;
-        }
-        else {
-            if (this.tipoVehiculo() === "M") {
-                return this.precioFinal() * 0.5;
-            }
-            else {
-                return 0;
-            }
-        }
+        return 0;
     }
     toJSON() {
         return {
             placa: this.placa,
-            color: this.color,
-            precioFinal: this.precioFinal(),
-            comision: this.comision()
+            color: this.color
         };
     }
 }
