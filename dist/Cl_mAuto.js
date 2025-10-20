@@ -17,8 +17,8 @@ export default class Cl_mAuto extends Cl_mVehiculo {
     precioFinal() {
         let recargoColor = 0;
         // Usar la propiedad precioBase del auto
-        if (this.color.toLowerCase() === "rojo") {
-            recargoColor = this.precioBase * 0.15;
+        if (this.color === "rojo") {
+            return recargoColor = this.precioBase * 0.15;
         }
         else {
             recargoColor = this.precioBase * 0.1;

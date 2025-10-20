@@ -12,17 +12,13 @@ export default class Cl_mMoto extends Cl_mVehiculo {
         return this.modelo;
     }
     modeloPrecio() {
-        let precio = 0;
-        if (this.modelo === "P") {
-            return 400;
-        }
-        else {
-            if (this.modelo === "T") {
+        switch (this.modelo) {
+            case "P":
+                return 400;
+            case "T":
                 return 500;
-            }
-            else {
-                return 600;
-            }
+            default:
+                return 600; // Precio base para modelos no listados
         }
     }
     tipoVehiculo() {
@@ -31,18 +27,17 @@ export default class Cl_mMoto extends Cl_mVehiculo {
     precioFinal() {
         let precioBase = this.modeloPrecio();
         let recargoColor = 0;
-        // Calcula el recargo por color
-        if (this.color.toLowerCase() === "rojo") {
-            recargoColor = this.modeloPrecio() * 0.15;
+        if (this.color === "rojo") {
+            recargoColor = precioBase * 0.15;
         }
         else {
-            recargoColor = this.modeloPrecio() * 0.1;
+            recargoColor = precioBase * 0.1;
         }
         return precioBase + recargoColor;
     }
     comision() {
-        // Asumiendo una comisión del 15% para Motos (lógica de negocio)
-        return this.precioFinal() * 0.5;
+        // Asumiendo una comisión del 5% para Motos (lógica de negocio)
+        return this.precioFinal() * 0.05;
     }
     toJSON() {
         return Object.assign(Object.assign({}, super.toJSON()), { modelo: this.modelo, modeloPrecio: this.modeloPrecio(), precioFinal: this.precioFinal(), comision: this.comision() // Para verificación

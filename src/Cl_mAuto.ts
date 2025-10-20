@@ -27,8 +27,8 @@ get PrecioBase(): number {
 precioFinal(): number {
     let recargoColor: number = 0;
     // Usar la propiedad precioBase del auto
-    if (this.color.toLowerCase() === "rojo") {
-        recargoColor = this.precioBase * 0.15; 
+    if (this.color === "rojo") {
+       return recargoColor = this.precioBase * 0.15; 
     } else {
         recargoColor = this.precioBase * 0.1; 
     }
